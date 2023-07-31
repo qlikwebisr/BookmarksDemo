@@ -1,0 +1,541 @@
+/** fonts file **/
+/* font face mixin */
+/*  
+OpenSansHebrew-ExtraBold.ttf
+OpenSansHebrew-Bold.ttf
+OpenSansHebrew-Regular.tt
+OpenSansHebrew-Light.ttf
+@import url(//fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+*/
+/* Font Face example */
+/*  @font-face{
+    font-family:"Heebo";
+    src:url("fonts/heebo/Heebo-Regular.eot") format("eot"),url("fonts/heebo/Heebo-Regular.ttf") format("truetype");
+}
+ */
+@font-face {
+  font-family: "OpenSansHebrew";
+  font-weight: 800;
+  src: url("../fonts/OpenSansHebrew-ExtraBoldd.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansHebrew";
+  font-weight: 700;
+  src: url("../fonts/OpenSansHebrew-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansHebrew";
+  font-weight: 500;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansHebrew";
+  font-weight: 400;
+  src: url("../fonts/OpenSansHebrew-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansHebrew";
+  font-weight: 300;
+  src: url("../fonts/OpenSansHebrew-Light.ttf") format("truetype");
+}
+
+/* 
+//screen sizes
+$extra-extra-small: 320px; //iPhone SE 
+$extra-small: 415px;
+$small: 576px; 
+$medium: 768px; 
+$large: 992px; 
+$extra-large: 1200px; 
+$extra-extra-large: 1400px; 
+*/
+html,
+body {
+  font-family: "Open Sans Hebrew", sans-serif !important;
+  font-size: 16px;
+  color: #141414;
+}
+
+/* scrallbar panel color */
+.scrollable-element {
+  scrollbar-color: #009845;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #009845;
+}
+
+/* Bootstrap styles */
+.col,
+.col-1,
+.col-10,
+.col-11,
+.col-12,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-auto,
+.col-lg,
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-auto,
+.col-md,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-auto,
+.col-sm,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-auto,
+.col-xl,
+.col-xl-1,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-auto {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.container-fluid,
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+/* Objects */
+.qvobject,
+.qvplaceholder {
+  flex: 1 1 auto;
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  background: rgba(232, 235, 237, 0.3) !important;
+  padding: 37px 24px;
+  border-radius: 24px;
+}
+
+.qvobject .qv-object-header,
+.qvplaceholder .qv-object-header {
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.qvobject .qv-object-header .qv-object-title-text,
+.qvplaceholder .qv-object-header .qv-object-title-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #141414;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  margin: 0;
+}
+
+.qvobject .qv-object-wrapper .qv-object,
+.qvplaceholder .qv-object-wrapper .qv-object {
+  border: none;
+  /* container properties*/
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container {
+  /* cancel border */
+  /* buttons */
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .qs-container .qsc-tab-row,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .qs-container .qsc-tab-row {
+  border: none !important;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .qs-container .qsc-item-wrapper,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .qs-container .qsc-item-wrapper {
+  border: none !important;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .qsc-tab-row,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .qsc-tab-row {
+  min-height: 56px;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .lui-tab,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .lui-tab {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #141414;
+  background: rgba(238, 239, 243, 0.85);
+  padding: 18px 24px;
+  height: auto !important;
+  min-height: 54px !important;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 26px;
+  border: none !important;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .lui-tab.lui-active,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .lui-tab.lui-active {
+  background: #0071e2;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .lui-tab.lui-active span,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .lui-tab.lui-active span {
+  color: #FFFFFF;
+}
+
+.qvobject .qv-object-wrapper .qv-object.qv-object-container .lui-tab span,
+.qvplaceholder .qv-object-wrapper .qv-object.qv-object-container .lui-tab span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #141414;
+}
+
+.chart .qv-object .qv-object-title {
+  padding: 0;
+}
+
+/* selections bar */
+#CurrentSelections {
+  height: 30px !important;
+  display: block;
+}
+
+#CurrentSelections .qvt-selections {
+  background: #eeeff3;
+  /* #explore-selections-label {
+  	display: none;
+
+  	@include small {
+  		display: inline-block;
+  	}
+  } */
+}
+
+#CurrentSelections .qv-panel-current-selections {
+  /* min-height: 30px !important;
+    max-height: 30px !important; */
+}
+
+#CurrentSelections .bright.qv-panel-current-selections .wrap {
+  background-color: #eeeff3 !important;
+  border-bottom: 1px solid #eeeff3 !important;
+}
+
+#CurrentSelections .bright.qv-panel-current-selections .buttons-end .qv-subtoolbar-button,
+#CurrentSelections .bright.qv-panel-current-selections .buttons .qv-subtoolbar-button {
+  border-bottom: none;
+  color: #141414;
+}
+
+#CurrentSelections .qv-panel-current-selections .qv-selections-pager.qv-selections-pager {
+  margin-bottom: 0;
+}
+
+#CurrentSelections .bright.qv-panel-current-selections .buttons-end.border-bottom,
+#CurrentSelections .bright.qv-panel-current-selections .buttons.border-bottom {
+  border-bottom: none !important;
+}
+
+/*  Errors popup */
+#popup {
+  background-color: #c3534b;
+  color: #FFFFFF;
+  position: fixed;
+  max-width: 250px;
+  padding: 10px;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+  display: none;
+  border-radius: 5px;
+  z-index: 6;
+  font-family: sans-serif;
+}
+
+.close {
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  position: absolute;
+  right: 9px;
+  top: 7px;
+}
+
+.close:hover {
+  opacity: 0.5;
+}
+
+#popupText {
+  margin-right: 23px;
+}
+
+/* Header style */
+.title_menue_header {
+  margin: 15px 15px 0;
+}
+
+.title_menue_header .title_logo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.title_menue_header .title_logo .logo_container {
+  width: 15%;
+  text-align: right;
+}
+
+.title_menue_header .title_logo .logo_container img {
+  max-height: 50px;
+}
+
+.title_menue_header .title_logo .title_container {
+  width: 85%;
+}
+
+.title_menue_header .title_logo .title_container h1.sheet_title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: #141414;
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+
+.title_menue_header .menu .navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.title_menue_header .menu .navbar .nav-link {
+  padding: 0 0 0 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: #0466c7;
+}
+
+.title_menue_header .menu .navbar .nav-link:hover,
+.title_menue_header .menu .navbar .nav-link:active,
+.title_menue_header .menu .navbar .nav-link:focus {
+  color: #4293e4;
+}
+
+.top_panel {
+  margin-top: 8px;
+}
+
+.top_panel .top_panel_div,
+.top_panel .bookmark_row{
+  padding: 0 15px 15px;
+  margin-bottom: 0;
+}
+
+.top_panel .top_panel_div .filter_panel{
+  height:102px !important;
+}
+/* cancel filter focus style */
+.qv-filterpane .qv-filterpane-collapsed:focus{
+  box-shadow: none;
+}
+
+.top_panel .top_panel_div h2.top_panel_title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  color: #141414;
+  padding-right: 49px;
+}
+
+.top_panel .top_panel_div .qvobject,
+.top_panel .top_panel_div .qvplaceholder {
+  height: 180px;
+  padding: 0 15px;
+  /* border: 1px solid #d9d9d9; */
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.15);
+  background: rgba(232, 235, 237, 0.9) !important;
+
+}
+
+.top_panel .top_panel_div .qv-object-qsstatistic {
+  background: rgba(232, 235, 237, 0.9) !important;
+}
+
+.top_panel .top_panel_div .qvobject:hover,
+.top_panel .top_panel_div .qvobject:active,
+.top_panel .top_panel_div .qvobject:focus,
+.top_panel .top_panel_div .qvobject:hover>.qv-object-qsstatistic,
+.top_panel .top_panel_div .qvobject:active>.qv-object-qsstatistic,
+.top_panel .top_panel_div .qvobject:focus>.qv-object-qsstatistic,
+.top_panel .top_panel_div .qvplaceholder:hover,
+.top_panel .top_panel_div .qvplaceholder:active,
+.top_panel .top_panel_div .qvplaceholder:focus {
+  /* background: #FFFFFF !important; */
+  box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.top_panel .top_panel_div .qvobject .qv-object-kpi .kpi-data .measure-title,
+.top_panel .top_panel_div .qvplaceholder .qv-object-kpi .kpi-data .measure-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  color: #141414;
+}
+
+.top_panel .top_panel_div .qvobject .qv-object-kpi .value-wrapper,
+.top_panel .top_panel_div .qvplaceholder .qv-object-kpi .value-wrapper {
+  min-height: 70px;
+}
+
+.top_panel .top_panel_div .qv-object .qv-object-content {
+  height: 94%;
+}
+
+.top_panel .top_panel_div .qvobject .qv-collapsed-listbox {
+  padding: 2px 0;
+  border: none;
+  height: auto;
+  border-radius: 24px;
+}
+
+.top_panel .top_panel_div .qvobject .qv-collapsed-listbox .title-wrapper {
+  font-size: 18px;
+  font-size: 18px;
+}
+
+.top_panel .top_panel_div .qvobject .qv-collapsed-listbox .title-wrapper .title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #0071e2;
+  text-align: right;
+  padding: 0;
+}
+
+.top_panel .top_panel_div .qvobject .qv-collapsed-listbox .qv-state-count-bar {
+  display: none;
+}
+
+/* Main div */
+.main_div {
+  background: #FFF;
+}
+
+.main_div .center_panel {
+  background: #FFFFFF;
+  width: 100%;
+  border-radius: 24px;
+  padding: 0 15px;
+  margin-top: 9px;
+}
+
+.main_div .center_panel .qvobject {
+  height: 400px;
+  padding: 15px 0;
+}
+/* bookmark_row */
+.bookmark_row{
+  height:120px;
+}
+
+.bookmark_row h4{
+  font-weight: 700;
+}
+.BookmarkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 3;
+  column-fill: auto;
+  height: 100px !important;
+} /* remove defaults */
+
+.BookmarkList li{
+  color: #0071e2;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.BookmarkList li.active{
+  color:#64B5F6 ;
+  font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+  .row > div {
+    margin-bottom: 10px;
+  }
+  .chart .qvobject{
+    height: 300px !important;
+  }
+  .qvobject .qv-object-header .qv-object-title-text,
+  .qvplaceholder .qv-object-header .qv-object-title-text{
+    text-align: center !important;
+  }
+}
